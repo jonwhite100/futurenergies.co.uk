@@ -43,41 +43,6 @@ body {
   }
 }
 
-//Font sizes
-p {
-    font-size: $font-size-base * 1.5;
-    line-height: 1.4;
-    margin-bottom: 1.8rem;
-}
-
-
-h1{
-	font-size: 6em;
-
-    .welcome & {
-        text-align: right;
-        text-transform: uppercase;
-        color: $secondary;
-
-        span {
-            text-transform: none;
-            color: $white;
-            color: $primary;
-        }
-
-        small {
-            display: block;
-            margin-top: 3rem;
-            text-transform: none;
-            font-size: $font-size-base * 2;
-            color: $gray-300;;
-        }
-    }
-}
-
-h1, h2, h3 {
-    font-weight: 700;
-}
 
 // Welcome block
 .welcome {
@@ -127,97 +92,7 @@ header,
 .section{
 	// text-align:center;
 }
-#menu li {
-	display:inline-block;
-	margin: 10px;
-	color: #000;
-	background:#fff;
-	background: rgba(255,255,255, 0.5);
-	-webkit-border-radius: 10px;
-            border-radius: 10px;
-}
-#menu li.active{
-	background:#666;
-	background: rgba(0,0,0, 0.5);
-	color: #fff;
-}
-#menu li a{
-	text-decoration:none;
-	color: #000;
-}
-#menu li.active a:hover{
-	color: #000;
-}
-#menu li:hover{
-	background: rgba(255,255,255, 0.8);
-}
-#menu li a,
-#menu li.active a{
-	padding: 9px 18px;
-	display:block;
-}
-#menu li.active a{
-	color: #fff;
-}
-#menu{
-	position:fixed;
-	top:0;
-	left:0;
-	height: 40px;
-	z-index: 70;
-	width: 100%;
-	padding: 0;
-	margin:0;
-}
-.twitter-share-button{
-	position: fixed;
-	z-index: 99;
-	right: 149px;
-	top: 9px;
-}
 
-#download{
-	margin: 10px 0 0 0;
-	padding: 15px 10px;
-	color: #fff;
-	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-	background-color: #49afcd;
-	// background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
-	// background-image: -ms-linear-gradient(top, #5bc0de, #2f96b4);
-	// background-image: -webkit-gradient(linear,0 0,0 100%,from( #5bc0de),to( #2f96b4));
-	// background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
-	// background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
-	// background-image: linear-gradient(top, #5bc0de, #2f96b4);
-	// background-repeat: repeat-x;
-	// filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);
-	// border-color: #2f96b4 #2f96b4 #1f6377;
-	// border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
-	// filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	vertical-align: middle;
-	cursor: pointer;
-	display: inline-block;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
-	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
-	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
-}
-#download a{
-	text-decoration:none;
-	color:#fff;
-}
-#download:hover{
-	text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-	background-color: #2F96B4;
-	background-position: 0 -15px;
-	-webkit-transition: background-position .1s linear;
-	-moz-transition: background-position .1s linear;
-	-ms-transition: background-position .1s linear;
-	-o-transition: background-position .1s linear;
-	transition: background-position .1s linear;
-}
 #infoMenu{
 	height: 20px;
 	color: $gray-100;
@@ -310,18 +185,6 @@ header,
 
 
 
-
-
-
- /** CASS stuff **/
- /** Animations **/
- /* line 15, ../scss/base.scss */
-
- /* line 30, ../scss/base.scss */
-
-
- /** basics **/
- /* line 4, ../scss/styles.scss */
 
 
  /* line 16, ../scss/styles.scss */

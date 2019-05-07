@@ -1,0 +1,35 @@
+//Font sizes
+p {
+    font-size: $font-size-base * 1.5;
+    line-height: 1.4;
+    margin-bottom: 1.8rem;
+}
+
+
+h1{
+	font-size: 6em;
+
+    .welcome & {
+        text-align: right;
+        text-transform: uppercase;
+        color: $secondary;
+
+        span {
+            text-transform: none;
+            color: $white;
+            color: $primary;
+        }
+
+        small {
+            display: block;
+            margin-top: 3rem;
+            text-transform: none;
+            font-size: $font-size-base * 2;
+            color: $gray-300;;
+        }
+    }
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
