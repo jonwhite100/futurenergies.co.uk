@@ -1,5 +1,102 @@
-.header {
-    .text-muted {
-        
+header {
+    // position: fixed;
+    // max-width: 1260px;
+    // z-index: 80;
+    // margin: 0px auto 0 auto;
+    // padding: 40px 30px 0 30px;
+    // opacity: 1;
+    // left: 0px;
+    // right: 0px;
+    // -webkit-box-sizing: border-box;
+    // -moz-box-sizing: border-box;
+    // -ms-box-sizing: border-box;
+    // box-sizing: border-box;
+    //
+    // .fp-viewing-Welcome &,
+    // .fp-viewing-Instagram &{
+    //     opacity: 0;
+    //     margin-top: -120px;
+    // }
+    //
+    // div {
+    //     position: relative;
+    //     width: 50%;
+    //     float: left;
+    //     box-sizing: border-box;
+    //
+    //     @include media-breakpoint-down(sm) {
+    //         width: 60%;
+    //     }
+    // }
+    //
+    // div + div {
+    //     float: right;
+    //     text-align: right;
+    //
+    //     @include media-breakpoint-down(sm) {
+    //         width: 40%;
+    //     }
+    // }
+    //
+    // .contact-links {
+    //     padding-top: 20px;
+    //
+    //     a {
+    //         font-size: 20px;
+    //     }
+    // }
+    //
+    // @include media-breakpoint-down(sm) {
+    //     padding-top: 15px;
+    //     padding-left: 15px;
+    //     padding-right: 15px;
+    // }
+}
+
+.nav-item {
+
+    @include media-breakpoint-down(md) {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid $white;        
+    }
+}
+
+.navbar-expand-lg {
+    .navbar-nav {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
+.contact-links {
+    font-size: $font-size-base * 1.5;
+
+    a {
+        opacity: 1;
+        margin: 0px 7px 0px 7px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &.dribble {
+            color: $c_dribble;
+        }
+
+        &.instagram {
+            color: $c_instagram;
+        }
+
+        &.linkedin {
+            color: $c_linkedin;
+        }
+
+        &.pinterest {
+            color: $c_pinterest;
+        }
     }
 }
