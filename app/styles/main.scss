@@ -4,7 +4,8 @@
 
 @import "components/fullpage";
 @import "components/header";
-
+@import "components/links";
+@import "components/text";
 
 body {
     height: 100%;
@@ -53,6 +54,16 @@ body {
     background-size: auto 100%;
 }
 
+// sections
+.fp-tableCell {
+    padding-top: 2.5rem;
+
+    @include media-breakpoint-up(sm) {
+        padding-top: 9rem;
+    }
+}
+
+
 // Animation
 .animate,
 .photo-credit a,
@@ -85,9 +96,9 @@ header,
 }
 
 .intro p{
-	width: 50%;
-	margin: 0 auto;
-	font-size: 1.5em;
+	// width: 50%;
+	// margin: 0 auto;
+	// font-size: 1.5em;
 }
 .section{
 	// text-align:center;
@@ -279,94 +290,28 @@ header,
 
 
  /* line 260, ../scss/styles.scss */
- .about {
-   text-align: left;
- }
- /* line 264, ../scss/styles.scss */
- .about p span {
-   color: #202020;
- }
- /* line 268, ../scss/styles.scss */
- .about p a {
-   text-decoration: underline;
- }
- @media (max-width: 767px) {
-   /* line 260, ../scss/styles.scss */
-   .about {
-     text-align: center;
-   }
-   /* line 275, ../scss/styles.scss */
-   .about p {
-     font-size: 18px;
-   }
- }
+ // .about {
+ //   text-align: left;
+ // }
+ // /* line 264, ../scss/styles.scss */
+ // .about p span {
+ //   color: #202020;
+ // }
+ // /* line 268, ../scss/styles.scss */
+ // .about p a {
+ //   text-decoration: underline;
+ // }
+ // @media (max-width: 767px) {
+ //   /* line 260, ../scss/styles.scss */
+ //   .about {
+ //     text-align: center;
+ //   }
+ //   /* line 275, ../scss/styles.scss */
+ //   .about p {
+ //     font-size: 18px;
+ //   }
+ // }
 
-
- /* line 629, ../scss/styles.scss */
- .link-down {
-   position: absolute;
-   display: table;
-   background-color: #ffffff;
-   text-align: center;
-   bottom: 30px;
-   left: 0;
-   right: 0;
-   margin: 0 auto 0 auto;
-   -webkit-border-radius: 100%;
-   -moz-border-radius: 100%;
-   -ms-border-radius: 100%;
-   border-radius: 100%;
-   -webkit-box-shadow: 0 10px 30px 0px rgba(32, 32, 32, 0.1);
-   -moz-box-shadow: 0 10px 30px 0px rgba(32, 32, 32, 0.1);
-   box-shadow: 0 10px 30px 0px rgba(32, 32, 32, 0.1);
-   width: 48px;
-   height: 48px;
- }
- @media (max-width: 767px) {
-   /* line 629, ../scss/styles.scss */
-   .link-down {
-     margin: inherit;
-     left: inherit;
-     right: 30px;
-   }
- }
- /* line 648, ../scss/styles.scss */
- .link-down:before {
-   z-index: 2;
-   display: table-cell;
-   vertical-align: middle;
-   font-family: FontAwesome;
-   content: '\f107';
-   position: relative;
- }
- /* line 658, ../scss/styles.scss */
- .link-down:after {
-   z-index: 1;
-   position: absolute;
-   display: block;
-   z-index: 1;
-   content: '';
-   left: 50%;
-   top: 50%;
-   -webkit-transform: translateY(-50%) translateX(-50%);
-   background-color: #ffffff;
-   -webkit-border-radius: 100%;
-   -moz-border-radius: 100%;
-   -ms-border-radius: 100%;
-   border-radius: 100%;
-   width: 0%;
-   height: 0%;
- }
- /* line 674, ../scss/styles.scss */
- .link-down:hover:after {
-   background-color: #202020;
-   width: 100%;
-   height: 100%;
- }
- /* line 678, ../scss/styles.scss */
- .link-down:hover:before {
-   color: #ffffff;
- }
 
  /* line 685, ../scss/styles.scss */
  #instafeed a {

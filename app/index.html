@@ -21,7 +21,6 @@
     <body>
 
     <header>
-        <div class="contact-links">
             <nav class="navbar navbar-expand-lg navbar-light fixed-top">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" class="logo" />
@@ -31,8 +30,8 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link active" href="#Welcome">Home</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Welcome">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#About">About</a>
@@ -46,7 +45,6 @@
                     </ul>
                 </div>
             </nav>
-        </div>
     </header>
 
     <main id="fullpage">
@@ -69,7 +67,7 @@
         </section>
 
       	<section class="section about" id="section1">
-            <a href="#Councils" class="link-down"></a>
+            <!-- <a href="#Councils" class="link-down"></a> -->
       		<div class="wrapper">
       			<h2>About</h2>
       			<p>Solar panels are one of the most popular sustainable solutions to date. The uptake of solar solutions worldwide has grown by approximately 50% per year for the last decade and continues to grow year on year.</p>
@@ -80,7 +78,7 @@
       	</section>
 
       	<section class="section councils" id="section2">
-            <a href="#Contact" class="link-down"></a>
+            <!-- <a href="#Contact" class="link-down"></a> -->
             <div class="wrapper">
       			<h2>Councils & Housing Associations</h2>
       			<p>We are continually looking to introduce Councils and Housing Associations to small and medium sized green energy generators looking for a way to sell their electricity at a greatly reduced rate and even out the price they receive for their energy.</p>
@@ -91,8 +89,9 @@
       	</section>
 
       	<section class="section contact" id="section3">
+            <a href="#Welcome" class="link-up"></a>
             <div class="wrapper">
-      			<h1>Contact</h1>
+      			<h2>Contact Futurenergies</h2>
       			<p>
                     <strong>Futurenergies Solutions ltd.</strong> has been working in the renewable sector since 2010 and we have been advising clients in both the domestic and commercial sectors.
                 </p>
@@ -124,16 +123,16 @@
     <script>
     jQuery(document).ready(function($) {
 
-        $(".fp-controlArrow").click(function(){
-            $(".fp-controlArrow").addClass("intro");
-        });
+        // $(".fp-controlArrow").click(function(){
+        //     $(".fp-controlArrow").addClass("intro");
+        // });
 
         $('#fullpage').fullpage({
             anchors: ['Welcome', 'About', 'Councils', 'Contact'],
-            sectionsColor: ['transparent', '#ffffff', '#f2f2f2', '#f2f2f2'],
+            sectionsColor: ['transparent', '#ffffff', '#fff', '#fff'],
             verticalCentered: true,
             css3:false,
-            continuousVertical: true,
+            continuousVertical: false,
             slidesNavigation: true,
             touchSensitivity: 50,
             responsiveWidth: 767

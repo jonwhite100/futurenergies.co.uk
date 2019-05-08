@@ -53,11 +53,15 @@ header {
     // }
 }
 
+.navbar {
+    background-color: $white;
+}
+
 .nav-item {
 
     @include media-breakpoint-down(md) {
         background-color: rgba(255, 255, 255, 0.5);
-        border-bottom: 1px solid $white;        
+        border-bottom: 1px solid $white;
     }
 }
 
