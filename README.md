@@ -7,3 +7,11 @@ Repository for dev of site. Uses fullpage.js
 - Install fullpage.js
 - A way you go!
 
+Production
+----------
+npm start - run locally
+npm run build - create dist
+
+Notes
+-----
+- Careful where ou add things to the header - e.g. Google fonts, you can break the dist
