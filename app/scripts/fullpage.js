@@ -229,8 +229,8 @@
               g_supportsPassive = true;
             }
           });
-          window.addEventListener("testPassive", null, opts);
-          window.removeEventListener("testPassive", null, opts);
+          window.addEventListener('testPassive', null, opts);
+          window.removeEventListener('testPassive', null, opts);
         } catch (e) {}
 
         //timeouts
@@ -1612,7 +1612,7 @@
             }
 
             // If continuousVertical && we need to wrap around
-            if (options.autoScrolling && options.continuousVertical && typeof (v.isMovementUp) !== "undefined" &&
+            if (options.autoScrolling && options.continuousVertical && typeof (v.isMovementUp) !== 'undefined' &&
                 ((!v.isMovementUp && v.yMovement == 'up') || // Intending to scroll down but about to go up or
                 (v.isMovementUp && v.yMovement == 'down'))) { // intending to scroll up but about to go down
 
@@ -2086,7 +2086,7 @@
             }
 
             else if(!matches(activeElement, 'textarea') && !matches(activeElement, 'input') && !matches(activeElement, 'select') &&
-                activeElement.getAttribute('contentEditable') !== "true" && activeElement.getAttribute('contentEditable') !== '' &&
+                activeElement.getAttribute('contentEditable') !== 'true' && activeElement.getAttribute('contentEditable') !== '' &&
                 options.keyboardScrolling && options.autoScrolling){
 
                 //preventing the scroll with arrow keys & spacebar & Page Up & Down keys
@@ -2832,7 +2832,7 @@
             text = text.replace('/', '-').replace('#','');
 
             //removing previous anchor classes
-            var classRe = new RegExp('\\b\\s?' + VIEWING_PREFIX + '-[^\\s]+\\b', "g");
+            var classRe = new RegExp('\\b\\s?' + VIEWING_PREFIX + '-[^\\s]+\\b', 'g');
             $body.className = $body.className.replace(classRe, '');
 
             //adding the current anchor
@@ -2897,9 +2897,9 @@
             var _addEventListener;
 
             if (window.addEventListener){
-                _addEventListener = "addEventListener";
+                _addEventListener = 'addEventListener';
             }else{
-                _addEventListener = "attachEvent";
+                _addEventListener = 'attachEvent';
                 prefix = 'on';
             }
 
@@ -3715,7 +3715,7 @@
     * https://stackoverflow.com/a/21817590/1081396
     */
     function wrapInner(parent, wrapper) {
-        if (typeof wrapper === "string"){
+        if (typeof wrapper === 'string'){
             wrapper = createElementFromHTML(wrapper);
         }
 
@@ -3838,7 +3838,7 @@
         data = typeof data === 'undefined' ? {} : data;
 
         // Native
-        if(typeof window.CustomEvent === "function" ){
+        if(typeof window.CustomEvent === 'function' ){
             event = new CustomEvent(eventName, {detail: data});
         }
         else{
@@ -3860,7 +3860,7 @@
     * Toggles the visibility of the passed element el.
     */
     function toggle(el, value){
-        if(typeof value === "boolean"){
+        if(typeof value === 'boolean'){
             for(var i = 0; i<el.length; i++){
                 el[i].style.display = value ? 'block' : 'none';
             }
