@@ -2,7 +2,9 @@
 .link-up {
     position: absolute;
     z-index: 3;
-    display: table;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: $white;
     text-align: center;
     bottom: 2.5rem;
@@ -14,6 +16,7 @@
     width: 3.5rem;
     height: 3.5rem;
 
+/*
     &::before {
         z-index: 2;
         display: table-cell;
@@ -45,6 +48,11 @@
     &:hover::before {
         color: $white;
     }
+*/
+    &:hover {
+        background-color: $gray-900;
+        color: $white;
+    }
 
     @include media-breakpoint-down(sm) {
         margin: inherit;
@@ -52,7 +60,7 @@
         right: 2.5rem;
     }
 }
-
+/*
 .link-up {
     &::before {
         content: '\f106';
@@ -64,3 +72,4 @@
         content: '\f107';
     }
 }
+*/
