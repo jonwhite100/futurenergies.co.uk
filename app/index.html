@@ -130,7 +130,7 @@
                     <div class="col-md-9">
                         <a href="mailto:&#116;&#105;&#109;&#115;&#113;&#117;&#105;&#114;&#101;&#115;&#064;&#102;&#117;&#116;&#117;&#114;&#101;&#110;&#101;&#114;&#103;&#105;&#101;&#115;&#046;&#099;&#111;&#046;&#117;&#107;?subject=New website enquiry">
                             &#116;&#105;&#109;&#115;&#113;&#117;&#105;&#114;&#101;&#115;&#064;&#102;&#117;&#116;&#117;&#114;&#101;&#110;&#101;&#114;&#103;&#105;&#101;&#115;&#046;&#099;&#111;&#046;&#117;&#107;
-                        </a> 
+                        </a>
                     </div>
                     <div class="col-md-3">
                         <div class="image-wrapper">
@@ -172,45 +172,7 @@
     <script src="scripts/fullpage.js"></script>
     <!-- endbuild -->
     <script>
-    jQuery(document).ready(function($) {
-
-        // $(".fp-controlArrow").click(function(){
-        //     $(".fp-controlArrow").addClass("intro");
-        // });
-
-        $('#fullpage').fullpage({
-            anchors: ['Welcome', 'About', 'Councils', 'Contact'],
-            sectionsColor: ['transparent', '#ffffff', '#fff', '#fff'],
-            verticalCentered: true,
-            css3:false,
-            continuousVertical: false,
-            slidesNavigation: true,
-            touchSensitivity: 50,
-            responsiveWidth: 767
-        });
-
-        // $('a[data-rel^=lightcase]').lightcase({
-        //     swipe: true,
-        //     transitionIn: 'scrollBottom',
-        //     maxWidth: '1366px',
-        // });
-
-        $(document).on('click', '.enlarge', function(){
-            $.fn.fullpage.setAllowScrolling(false);
-        });
-
-        $(document).on('click', '.turnScrollOn', function(){
-            $.fn.fullpage.setAllowScrolling(true);
-        });
-
-        // ekko lightbox
-        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-            event.preventDefault();
-            $(this).ekkoLightbox({
-                alwaysShowClose: true,
-            });
-        });
-    });
+    
 
     </script>
   </body>
