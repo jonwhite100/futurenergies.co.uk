@@ -1,35 +1,34 @@
 //Font sizes
 p {
-    font-size: $font-size-base * 0.85;
+	margin-bottom: 1.8rem;
+    font-size: $font-size-base * .85;
     line-height: 1.4;
-    margin-bottom: 1.8rem;
 
     @include media-breakpoint-up(sm) {
         font-size: $font-size-base * 1.25;
     }
 }
 
-
-h1{
+h1 {
 	font-size: $h1-font-size * 2.1;
     word-wrap: break-word;
 
     .welcome & {
+		color: $primary;
         text-align: right;
         text-transform: uppercase;
-        color: $secondary;
 
         span {
-            text-transform: none;
-            color: $primary;
+			color: $secondary;
+			// text-transform: none;
         }
 
         small {
             display: block;
-            margin-top: 3rem;
-            text-transform: none;
-            font-size: $h2-font-size;
-            color: $white;
+			margin-top: 3rem;
+			color: $white;
+			font-size: $h2-font-size;
+            // text-transform: none;
         }
     }
 
@@ -38,6 +37,8 @@ h1{
     }
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 700;
 }
