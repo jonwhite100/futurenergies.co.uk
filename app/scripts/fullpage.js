@@ -49,7 +49,7 @@
     var SECTION =               'fp-section';
     var SECTION_SEL =           '.' + SECTION;
     var SECTION_ACTIVE_SEL =    SECTION_SEL + ACTIVE_SEL;
-    var TABLE_CELL =            'fp-tableCell';
+    var TABLE_CELL =            'fp-table-cell';
     var TABLE_CELL_SEL =        '.' + TABLE_CELL;
     var AUTO_HEIGHT =           'fp-auto-height';
     var AUTO_HEIGHT_SEL =       '.' + AUTO_HEIGHT;

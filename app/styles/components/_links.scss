@@ -1,75 +1,37 @@
 .link-down,
 .link-up {
-    position: absolute;
-    z-index: 3;
-    display: flex;
+	display: flex;
+	position: absolute;
+	right: 0;
+	bottom: 2.5rem;
+	left: 0;
     align-items: center;
-    justify-content: center;
-    background-color: $white;
-    text-align: center;
-    bottom: 2.5rem;
-    left: 0;
-    right: 0;
-    margin: 0 auto 0 auto;
-    border-radius: 100%;
-    box-shadow: 0 10px 30px 0px rgba(32, 32, 32, 0.1);
-    width: 3.5rem;
-    height: 3.5rem;
+	justify-content: center;
+	width: 3.5rem;
+	height: 3.5rem;
+	margin: 0 auto;
+	border-radius: 100%;
+	background-color: $white;
+	text-align: center;
+	box-shadow: 0 10px 30px 0 rgba(32, 32, 32, .1);
+	z-index: 3;
 
-/*
-    &::before {
-        z-index: 2;
-        display: table-cell;
-        vertical-align: middle;
-        font-family: FontAwesome;
-        position: relative;
-    }
-
-    &::after {
-        position: absolute;
-        display: block;
-        z-index: 1;
-        content: '';
-        left: 50%;
-        top: 50%;
-        background-color: $white;
-        border-radius: 100%;
-        width: 0%;
-        height: 0%;
-        -webkit-transform: translateY(-50%) translateX(-50%);
-    }
-
-    &:hover::after {
-        background-color: $gray-900;
-        width: 100%;
-        height: 100%;
-    }
-
-    &:hover::before {
-        color: $white;
-    }
-*/
     &:hover {
         background-color: $gray-900;
         color: $white;
     }
 
     @include media-breakpoint-down(sm) {
+		right: 2.5rem;
+		left: inherit;
         margin: inherit;
-        left: inherit;
-        right: 2.5rem;
-    }
-}
-/*
-.link-up {
-    &::before {
-        content: '\f106';
     }
 }
 
 .link-down {
-    &::before {
-        content: '\f107';
-    }
+	transition: all 300ms cubic-bezier(.42, 0, .58, 1);
+
+	&:before {
+		transition: all 300ms cubic-bezier(.42, 0, .58, 1);
+	}
 }
-*/
